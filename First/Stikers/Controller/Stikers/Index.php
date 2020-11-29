@@ -12,8 +12,8 @@ class Index extends \Magento\Framework\App\Action\Action
 
 	public function execute()
 	{
-		//действие для создания стикера на товарах по акции
-
-
+		$resultRedirect = $this->resultRedirectFactory->create();
+		return $resultRedirect->setPath('/');
 	}
+
 }
